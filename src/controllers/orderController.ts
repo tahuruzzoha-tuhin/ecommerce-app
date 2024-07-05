@@ -55,7 +55,7 @@ export const getAllOrders = async (req: Request, res: Response) => {
   const email = req.query.email as string | undefined;
 
   if (email && !isValidEmail(email)) {
-    return res.status(400).json({ success: false, error: 'Invalid email format' });
+    return res.status(400).json({ success: false, message:"Order not found", error: 'Invalid email format' });
   }
 
   try {
@@ -66,7 +66,7 @@ export const getAllOrders = async (req: Request, res: Response) => {
       if (orders.length === 0) {
         return res.status(404).json({
           success: false,
-          message: `No orders found for user email '${email}'`,
+          message: `Order not found`,
         });
       }
       res.status(200).json({
@@ -79,7 +79,7 @@ export const getAllOrders = async (req: Request, res: Response) => {
       if (orders.length === 0) {
         return res.status(404).json({
           success: false,
-          message: 'No orders found',
+          message: 'Order not found',
         });
       }
       res.status(200).json({
@@ -89,6 +89,6 @@ export const getAllOrders = async (req: Request, res: Response) => {
       });
     }
   } catch (error) {
-    res.status(500).json({ success: false, error: 'Failed to fetch orders' });
+    res.status(500).json({ success: false, message: 'Order not found' });
   }
 };

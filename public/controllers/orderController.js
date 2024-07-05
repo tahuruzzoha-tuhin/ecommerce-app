@@ -56,7 +56,7 @@ exports.createOrder = createOrder;
 const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const email = req.query.email;
     if (email && !(0, validateOrder_1.isValidEmail)(email)) {
-        return res.status(400).json({ success: false, error: 'Invalid email format' });
+        return res.status(400).json({ success: false, message: "Order not found", error: 'Invalid email format' });
     }
     try {
         let orders;
@@ -65,7 +65,7 @@ const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* (
             if (orders.length === 0) {
                 return res.status(404).json({
                     success: false,
-                    message: `No orders found for user email '${email}'`,
+                    message: `Order not found`,
                 });
             }
             res.status(200).json({
@@ -79,7 +79,7 @@ const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* (
             if (orders.length === 0) {
                 return res.status(404).json({
                     success: false,
-                    message: 'No orders found',
+                    message: 'Order not found',
                 });
             }
             res.status(200).json({
@@ -90,7 +90,7 @@ const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* (
         }
     }
     catch (error) {
-        res.status(500).json({ success: false, error: 'Failed to fetch orders' });
+        res.status(500).json({ success: false, message: 'Order not found' });
     }
 });
 exports.getAllOrders = getAllOrders;

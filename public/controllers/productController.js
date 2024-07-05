@@ -61,7 +61,7 @@ const getAllProducts = (req, res) => __awaiter(void 0, void 0, void 0, function*
         if (products.length === 0) {
             return res.status(404).json({
                 success: false,
-                message: searchTerm ? `No products found matching search term '${searchTerm}'` : 'No products found',
+                message: searchTerm ? `Products not found` : 'Products not found',
             });
         }
         res.status(200).json({
@@ -71,7 +71,7 @@ const getAllProducts = (req, res) => __awaiter(void 0, void 0, void 0, function*
         });
     }
     catch (error) {
-        res.status(500).json({ success: false, error: 'Failed to fetch products' });
+        res.status(500).json({ success: false, error: 'Products not found' });
     }
 });
 exports.getAllProducts = getAllProducts;
@@ -92,7 +92,7 @@ const getProductById = (req, res) => __awaiter(void 0, void 0, void 0, function*
         });
     }
     catch (error) {
-        res.status(500).json({ success: false, error: 'Failed to fetch product' });
+        res.status(500).json({ success: false, error: 'Product not found' });
     }
 });
 exports.getProductById = getProductById;
