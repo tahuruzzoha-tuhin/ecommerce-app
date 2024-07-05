@@ -25,22 +25,20 @@ exports.productPartialSchema = zod_1.z.object({
     price: zod_1.z.number().optional(),
     category: zod_1.z.string().optional(),
     tags: zod_1.z.array(zod_1.z.string()).optional(),
-    variants: zod_1.z.array(zod_1.z.object({
-        type: zod_1.z.string(),
-        value: zod_1.z.string()
-    })).optional(),
-    inventory: zod_1.z.object({
-        quantity: zod_1.z.number(),
-        inStock: zod_1.z.boolean()
-    }).optional()
+    variants: zod_1.z.array(VariantSchema).optional(),
+    inventory: InventorySchema.optional(),
 }).strict();
 // ############ PRODUCT VALIDATOR ###############
 const validateProduct = (productData) => {
     const validation = ProductSchema.safeParse(productData);
     if (!validation.success) {
+        const errorDetails = validation.error.errors.map(err => ({
+            field: err.path.join('.'),
+            message: err.message,
+        }));
         return {
             success: false,
-            error: validation.error.errors,
+            error: errorDetails,
         };
     }
     return { success: true };
@@ -50,9 +48,13 @@ exports.validateProduct = validateProduct;
 const validateProductPartial = (productData) => {
     const validation = exports.productPartialSchema.safeParse(productData);
     if (!validation.success) {
+        const errorDetails = validation.error.errors.map(err => ({
+            field: err.path.join('.'),
+            message: err.message,
+        }));
         return {
             success: false,
-            error: validation.error.errors,
+            error: errorDetails,
         };
     }
     return { success: true };

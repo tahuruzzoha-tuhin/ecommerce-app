@@ -10,7 +10,6 @@ interface Inventory {
   inStock: boolean;
 }
 
-
 // #####################  PRODUCT INTERFACE ########################
 export interface IProduct extends Document {
   product_id: number;
@@ -32,8 +31,6 @@ const InventorySchema = new Schema<Inventory>({
   quantity: { type: Number, required: true },
   inStock: { type: Boolean, required: true },
 });
-
-
 
 // #####################  PRODUCT MODEL ########################
 const ProductSchema = new Schema<IProduct>({
