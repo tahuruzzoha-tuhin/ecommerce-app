@@ -62,6 +62,12 @@ const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* (
         let orders;
         if (email) {
             orders = yield Order_1.default.find({ email });
+            if (orders.length === 0) {
+                return res.status(404).json({
+                    success: false,
+                    message: `No orders found for user email '${email}'`,
+                });
+            }
             res.status(200).json({
                 success: true,
                 message: `Orders fetched successfully for user email '${email}'!`,
@@ -70,6 +76,12 @@ const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* (
         }
         else {
             orders = yield Order_1.default.find();
+            if (orders.length === 0) {
+                return res.status(404).json({
+                    success: false,
+                    message: 'No orders found',
+                });
+            }
             res.status(200).json({
                 success: true,
                 message: 'Orders fetched successfully!',
@@ -78,7 +90,7 @@ const getAllOrders = (req, res) => __awaiter(void 0, void 0, void 0, function* (
         }
     }
     catch (error) {
-        res.status(500).json({ success: false, error: `Order not found` });
+        res.status(500).json({ success: false, error: 'Failed to fetch orders' });
     }
 });
 exports.getAllOrders = getAllOrders;

@@ -63,6 +63,12 @@ export const getAllOrders = async (req: Request, res: Response) => {
 
     if (email) {
       orders = await Order.find({ email });
+      if (orders.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: `No orders found for user email '${email}'`,
+        });
+      }
       res.status(200).json({
         success: true,
         message: `Orders fetched successfully for user email '${email}'!`,
@@ -70,6 +76,12 @@ export const getAllOrders = async (req: Request, res: Response) => {
       });
     } else {
       orders = await Order.find();
+      if (orders.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: 'No orders found',
+        });
+      }
       res.status(200).json({
         success: true,
         message: 'Orders fetched successfully!',
@@ -77,6 +89,6 @@ export const getAllOrders = async (req: Request, res: Response) => {
       });
     }
   } catch (error) {
-    res.status(500).json({ success: false, error: `Order not found` });
+    res.status(500).json({ success: false, error: 'Failed to fetch orders' });
   }
 };
