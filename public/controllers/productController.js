@@ -101,7 +101,8 @@ const updateProduct = (req, res) => __awaiter(void 0, void 0, void 0, function* 
     try {
         const { name, description, price, category, tags, variants, inventory } = req.body;
         const productData = { name, description, price, category, tags, variants, inventory };
-        const validation = (0, validateProduct_1.validateProduct)(productData);
+        // Validate product data
+        const validation = (0, validateProduct_1.validateProductPartial)(req.body);
         if (!validation.success) {
             return res.status(400).json({ success: false, error: validation.error });
         }
