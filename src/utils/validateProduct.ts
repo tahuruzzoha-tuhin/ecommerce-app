@@ -53,9 +53,7 @@ export const validateProduct = (productData: any) => {
 };
 
 
-// Partial schema for partial updates
-// const partialProductSchema = ProductSchema.partial();
-
+// ############ PARTIAL PRODUCT VALIDATOR ###############
 export const validateProductPartial = (productData: any) => {
   const validation = productPartialSchema.safeParse(productData);
   if (!validation.success) {
