@@ -1,4 +1,4 @@
-import express, {NextFunction, Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import productRoutes from './routes/productRoutes';
 import orderRoutes from './routes/orderRoutes';
@@ -21,13 +21,17 @@ async function main() {
 
     app.use(express.json());
 
+
+    // ############ BOOTSTRAP ROUTE ###############
     app.get('/',(req:Request, res:Response)=>{
       res.send({"message":"Server running with mongodb atlas"})
     })
 
-    
+
+    // ############ APLICATION ROUTES ###############
     app.use('/api/products', productRoutes);
     app.use('/api/orders', orderRoutes);
+
 
     // Not Found Route Middleware
     app.use((req : Request, res : Response) => {
@@ -38,8 +42,8 @@ async function main() {
     });
 
     // Error Handling Middleware
-    app.use((err : any, req : Request, res : Response, next : NextFunction) => {
-      console.error(err.stack);
+    app.use((err : any, req : Request, res : Response) => {
+      console.error(err);
       res.status(500).json({
         success: false,
         error: 'Internal Server Error'

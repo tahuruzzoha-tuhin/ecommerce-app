@@ -13,7 +13,7 @@ type CreateOrderData = z.infer<typeof CreateOrderSchema>;
 
 
 // ############ ORDER VALIDATOR ###############
-const validateCreateOrder = (data: any) => {
+const validateCreateOrder = (data: unknown) => {
   try {
     const validatedData = CreateOrderSchema.parse(data);
     return validatedData as CreateOrderData;

@@ -1,0 +1,753 @@
+[
+
+    {
+      "name": "Xiaomi Mi 11",
+      "product_id": 9,
+      "description": "High-end smartphone with a sleek design and powerful specs.",
+      "price": 749,
+      "category": "Electronics",
+      "tags": ["smartphone", "Xiaomi", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Horizon Blue" },
+        { "type": "Storage Capacity", "value": "128GB" }
+      ],
+      "inventory": { "quantity": 35, "inStock": true }
+    },
+    {
+      "name": "Nokia 8.3 5G",
+      "product_id": 10,
+      "description": "5G-enabled smartphone with solid performance and camera.",
+      "price": 699,
+      "category": "Electronics",
+      "tags": ["smartphone", "Nokia", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Polar Night" },
+        { "type": "Storage Capacity", "value": "128GB" }
+      ],
+      "inventory": { "quantity": 20, "inStock": true }
+    },
+    {
+      "name": "Asus ROG Phone 5",
+      "product_id": 11,
+      "description": "Gaming smartphone with high refresh rate display and cooling system.",
+      "price": 999,
+      "category": "Electronics",
+      "tags": ["smartphone", "Asus", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Phantom Black" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 30, "inStock": true }
+    },
+    {
+      "name": "Oppo Find X3 Pro",
+      "product_id": 12,
+      "description": "Flagship smartphone with stunning display and performance.",
+      "price": 999,
+      "category": "Electronics",
+      "tags": ["smartphone", "Oppo", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Gloss Black" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 18, "inStock": true }
+    },
+    {
+      "name": "Realme GT",
+      "product_id": 13,
+      "description": "Affordable flagship with high-end specs and features.",
+      "price": 599,
+      "category": "Electronics",
+      "tags": ["smartphone", "Realme", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Racing Yellow" },
+        { "type": "Storage Capacity", "value": "128GB" }
+      ],
+      "inventory": { "quantity": 40, "inStock": true }
+    },
+    {
+      "name": "Vivo X60 Pro",
+      "product_id": 14,
+      "description": "Smartphone with advanced camera technology and sleek design.",
+      "price": 799,
+      "category": "Electronics",
+      "tags": ["smartphone", "Vivo", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Shimmer Blue" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 22, "inStock": true }
+    },
+    {
+      "name": "Motorola Edge 20 Pro",
+      "product_id": 15,
+      "description": "High-performance smartphone with a stunning display.",
+      "price": 699,
+      "category": "Electronics",
+      "tags": ["smartphone", "Motorola", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Midnight Blue" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 28, "inStock": true }
+    },
+    {
+      "name": "ZTE Axon 30 Ultra",
+      "product_id": 16,
+      "description": "Flagship smartphone with powerful specs and features.",
+      "price": 749,
+      "category": "Electronics",
+      "tags": ["smartphone", "ZTE", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 12, "inStock": true }
+    },
+    {
+      "name": "Sony Xperia 1 III",
+      "product_id": 17,
+      "description": "Smartphone with professional-grade camera and display.",
+      "price": 1299,
+      "category": "Electronics",
+      "tags": ["smartphone", "Sony", "Android"],
+      "variants": [
+        { "type": "Color", "value": "Frosted Black" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 15, "inStock": true }
+    },
+    {
+      "name": "Apple Watch Series 6",
+      "product_id": 18,
+      "description": "Advanced smartwatch with health monitoring features.",
+      "price": 399,
+      "category": "Wearables",
+      "tags": ["smartwatch", "Apple", "WatchOS"],
+      "variants": [
+        { "type": "Color", "value": "Space Gray" },
+        { "type": "Band", "value": "Sport Band" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Samsung Galaxy Watch 4",
+      "product_id": 19,
+      "description": "Smartwatch with advanced health and fitness tracking.",
+      "price": 349,
+      "category": "Wearables",
+      "tags": ["smartwatch", "Samsung", "Wear OS"],
+      "variants": [
+        { "type": "Color", "value": "Silver" },
+        { "type": "Band", "value": "Classic" }
+      ],
+      "inventory": { "quantity": 40, "inStock": true }
+    },
+    {
+      "name": "Fitbit Sense",
+      "product_id": 20,
+      "description": "Smartwatch with advanced health and fitness tracking.",
+      "price": 329,
+      "category": "Wearables",
+      "tags": ["smartwatch", "Fitbit", "Health"],
+      "variants": [
+        { "type": "Color", "value": "Carbon/Graphite" },
+        { "type": "Band", "value": "Infinity Band" }
+      ],
+      "inventory": { "quantity": 45, "inStock": true }
+    },
+    {
+      "name": "Garmin Forerunner 945",
+      "product_id": 21,
+      "description": "GPS smartwatch with advanced running and training features.",
+      "price": 599,
+      "category": "Wearables",
+      "tags": ["smartwatch", "Garmin", "Fitness"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Band", "value": "Silicone" }
+      ],
+      "inventory": { "quantity": 35, "inStock": true }
+    },
+    {
+      "name": "Amazfit GTR 2",
+      "product_id": 22,
+      "description": "Stylish smartwatch with comprehensive health tracking.",
+      "price": 179,
+      "category": "Wearables",
+      "tags": ["smartwatch", "Amazfit", "Health"],
+      "variants": [
+        { "type": "Color", "value": "Obsidian Black" },
+        { "type": "Band", "value": "Leather" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Huawei Watch GT 2 Pro",
+      "product_id": 23,
+      "description": "Premium smartwatch with long battery life.",
+      "price": 329,
+      "category": "Wearables",
+      "tags": ["smartwatch", "Huawei", "Health"],
+      "variants": [
+        { "type": "Color", "value": "Nebula Gray" },
+        { "type": "Band", "value": "Leather" }
+      ],
+      "inventory": { "quantity": 30, "inStock": true }
+    },
+    {
+      "name": "Sony WH-1000XM4",
+      "product_id": 24,
+      "description": "Industry-leading noise canceling wireless headphones.",
+      "price": 349,
+      "category": "Audio",
+      "tags": ["headphones", "Sony", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Feature", "value": "Noise Cancelling" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Bose QuietComfort 35 II",
+      "product_id": 25,
+      "description": "Wireless headphones with world-class noise cancellation.",
+      "price": 299,
+      "category": "Audio",
+      "tags": ["headphones", "Bose", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Silver" },
+        { "type": "Feature", "value": "Noise Cancelling" }
+      ],
+      "inventory": { "quantity": 45, "inStock": true }
+    },
+    {
+      "name": "Apple AirPods Pro",
+      "product_id": 26,
+      "description": "Wireless earbuds with active noise cancellation.",
+      "price": 249,
+      "category": "Audio",
+      "tags": ["earbuds", "Apple", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "White" },
+        { "type": "Feature", "value": "Noise Cancelling" }
+      ],
+      "inventory": { "quantity": 40, "inStock": true }
+    },
+    {
+      "name": "Samsung Galaxy Buds Pro",
+      "product_id": 27,
+      "description": "Wireless earbuds with immersive sound and noise cancellation.",
+      "price": 199,
+      "category": "Audio",
+      "tags": ["earbuds", "Samsung", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Phantom Black" },
+        { "type": "Feature", "value": "Noise Cancelling" }
+      ],
+      "inventory": { "quantity": 35, "inStock": true }
+    },
+    {
+      "name": "Jabra Elite 85t",
+      "product_id": 28,
+      "description": "Advanced wireless earbuds with adjustable ANC.",
+      "price": 229,
+      "category": "Audio",
+      "tags": ["earbuds", "Jabra", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Titanium Black" },
+        { "type": "Feature", "value": "Noise Cancelling" }
+      ],
+      "inventory": { "quantity": 30, "inStock": true }
+    },
+    {
+      "name": "Beats Powerbeats Pro",
+      "product_id": 29,
+      "description": "Totally wireless high-performance earphones.",
+      "price": 249,
+      "category": "Audio",
+      "tags": ["earbuds", "Beats", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Navy" },
+        { "type": "Feature", "value": "Wireless" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Anker Soundcore Liberty Air 2 Pro",
+      "product_id": 30,
+      "description": "True wireless earbuds with targeted ANC.",
+      "price": 129,
+      "category": "Audio",
+      "tags": ["earbuds", "Anker", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Onyx Black" },
+        { "type": "Feature", "value": "Noise Cancelling" }
+      ],
+      "inventory": { "quantity": 45, "inStock": true }
+    },
+    {
+      "name": "Marshall Stanmore II",
+      "product_id": 31,
+      "description": "Wireless Bluetooth speaker with powerful sound.",
+      "price": 399,
+      "category": "Audio",
+      "tags": ["speaker", "Marshall", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Feature", "value": "Bluetooth" }
+      ],
+      "inventory": { "quantity": 25, "inStock": true }
+    },
+    {
+      "name": "Sonos Move",
+      "product_id": 32,
+      "description": "Battery-powered smart speaker for outdoor and indoor listening.",
+      "price": 399,
+      "category": "Audio",
+      "tags": ["speaker", "Sonos", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Feature", "value": "Bluetooth" }
+      ],
+      "inventory": { "quantity": 20, "inStock": true }
+    },
+    {
+      "name": "JBL Charge 5",
+      "product_id": 33,
+      "description": "Portable waterproof speaker with built-in power bank.",
+      "price": 179,
+      "category": "Audio",
+      "tags": ["speaker", "JBL", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Blue" },
+        { "type": "Feature", "value": "Waterproof" }
+      ],
+      "inventory": { "quantity": 40, "inStock": true }
+    },
+    {
+      "name": "Google Nest Audio",
+      "product_id": 34,
+      "description": "Smart speaker with built-in Google Assistant.",
+      "price": 99,
+      "category": "Audio",
+      "tags": ["speaker", "Google", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Chalk" },
+        { "type": "Feature", "value": "Smart Assistant" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Amazon Echo (4th Gen)",
+      "product_id": 35,
+      "description": "Smart speaker with Alexa and premium sound.",
+      "price": 99,
+      "category": "Audio",
+      "tags": ["speaker", "Amazon", "Audio"],
+      "variants": [
+        { "type": "Color", "value": "Charcoal" },
+        { "type": "Feature", "value": "Smart Assistant" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Logitech MX Master 3",
+      "product_id": 36,
+      "description": "Advanced wireless mouse with customizable buttons.",
+      "price": 99,
+      "category": "Computer Accessories",
+      "tags": ["mouse", "Logitech", "Computer"],
+      "variants": [
+        { "type": "Color", "value": "Graphite" },
+        { "type": "Feature", "value": "Wireless" }
+      ],
+      "inventory": { "quantity": 60, "inStock": true }
+    },
+    {
+      "name": "Apple Magic Keyboard",
+      "product_id": 37,
+      "description": "Wireless keyboard with a sleek and compact design.",
+      "price": 99,
+      "category": "Computer Accessories",
+      "tags": ["keyboard", "Apple", "Computer"],
+      "variants": [
+        { "type": "Color", "value": "Silver" },
+        { "type": "Feature", "value": "Wireless" }
+      ],
+      "inventory": { "quantity": 50, "inStock": true }
+    },
+    {
+      "name": "Razer DeathAdder V2",
+      "product_id": 38,
+      "description": "Ergonomic gaming mouse with high-precision sensor.",
+      "price": 69,
+      "category": "Computer Accessories",
+      "tags": ["mouse", "Razer", "Computer"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Feature", "value": "Wired" }
+      ],
+      "inventory": { "quantity": 40, "inStock": true }
+    },
+    {
+      "name": "Dell UltraSharp U2720Q",
+      "product_id": 39,
+      "description": "27-inch 4K USB-C monitor with wide color coverage.",
+      "price": 599,
+      "category": "Computer Accessories",
+      "tags": ["monitor", "Dell", "Computer"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Feature", "value": "4K" }
+      ],
+      "inventory": { "quantity": 20, "inStock": true }
+    },
+    {
+      "name": "HP Envy 13",
+      "product_id": 40,
+      "description": "Slim and powerful laptop with a high-resolution display.",
+      "price": 999,
+      "category": "Computers",
+      "tags": ["laptop", "HP", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Natural Silver" },
+        { "type": "Storage Capacity", "value": "512GB" }
+      ],
+      "inventory": { "quantity": 30, "inStock": true }
+    },
+    {
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "product_id": 41,
+      "description": "Lightweight and durable business laptop with powerful performance.",
+      "price": 1399,
+      "category": "Computers",
+      "tags": ["laptop", "Lenovo", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Storage Capacity", "value": "1TB" }
+      ],
+      "inventory": { "quantity": 20, "inStock": true }
+    },
+    {
+      "name": "Apple MacBook Air M1",
+      "product_id": 42,
+      "description": "Ultra-thin and lightweight laptop with Apple's M1 chip.",
+      "price": 999,
+      "category": "Computers",
+      "tags": ["laptop", "Apple", "macOS"],
+      "variants": [
+        { "type": "Color", "value": "Space Gray" },
+        { "type": "Storage Capacity", "value": "256GB" }
+      ],
+      "inventory": { "quantity": 40, "inStock": true }
+    },
+    {
+      "name": "Microsoft Surface Laptop 4",
+      "product_id": 43,
+      "description": "Sleek and versatile laptop with touch screen display.",
+      "price": 1299,
+      "category": "Computers",
+      "tags": ["laptop", "Microsoft", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Platinum" },
+        { "type": "Storage Capacity", "value": "512GB" }
+      ],
+      "inventory": { "quantity": 25, "inStock": true }
+    },
+    {
+      "name": "Acer Predator Helios 300",
+      "product_id": 44,
+      "description": "High-performance gaming laptop with powerful graphics.",
+      "price": 1299,
+      "category": "Computers",
+      "tags": ["laptop", "Acer", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Storage Capacity", "value": "512GB" }
+      ],
+      "inventory": { "quantity": 15, "inStock": true }
+    },
+    {
+      "name": "Asus ROG Zephyrus G14",
+      "product_id": 45,
+      "description": "Compact and powerful gaming laptop with high refresh rate display.",
+      "price": 1499,
+      "category": "Computers",
+      "tags": ["laptop", "Asus", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Moonlight White" },
+        { "type": "Storage Capacity", "value": "1TB" }
+      ],
+      "inventory": { "quantity": 10, "inStock": true }
+    },
+    {
+      "name": "Dell XPS 15",
+      "product_id": 46,
+      "description": "Premium laptop with stunning display and powerful performance.",
+      "price": 1899,
+      "category": "Computers",
+      "tags": ["laptop", "Dell", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Platinum Silver" },
+        { "type": "Storage Capacity", "value": "1TB" }
+      ],
+      "inventory": { "quantity": 18, "inStock": true }
+    },
+    {
+      "name": "HP Spectre x360",
+      "product_id": 47,
+      "description": "Convertible laptop with 360-degree hinge and touch screen.",
+      "price": 1299,
+      "category": "Computers",
+      "tags": ["laptop", "HP", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Nightfall Black" },
+        { "type": "Storage Capacity", "value": "512GB" }
+      ],
+      "inventory": { "quantity": 30, "inStock": true }
+    },
+    {
+      "name": "Razer Blade 15",
+      "product_id": 48,
+      "description": "Gaming laptop with powerful specs and sleek design.",
+      "price": 1999,
+      "category": "Computers",
+      "tags": ["laptop", "Razer", "Windows"],
+      "variants": [
+        { "type": "Color", "value": "Black" },
+        { "type": "Storage Capacity", "value": "1TB" }
+      ],
+      "inventory": { "quantity": 12, "inStock": true }
+    },
+
+        {
+          "name": "Wireless Mouse",
+          "product_id": 49,
+          "description": "Ergonomic wireless mouse with adjustable DPI settings.",
+          "price": 29.99,
+          "category": "Electronics",
+          "tags": ["computer", "peripherals", "wireless", "ergonomic"],
+          "variants": [
+            {
+              "type": "color",
+              "value": "Black"
+            },
+            {
+              "type": "color",
+              "value": "White"
+            }
+          ],
+          "inventory": {
+            "quantity": 150,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "product_id": 50,
+          "description": "Portable Bluetooth speaker with high-fidelity sound and long battery life.",
+          "price": 59.99,
+          "category": "Electronics",
+          "tags": ["audio", "portable", "wireless", "speaker"],
+          "variants": [
+            {
+              "type": "color",
+              "value": "Blue"
+            },
+            {
+              "type": "color",
+              "value": "Red"
+            }
+          ],
+          "inventory": {
+            "quantity": 200,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Yoga Mat",
+          "product_id": 51,
+          "description": "Eco-friendly yoga mat with non-slip surface.",
+          "price": 24.99,
+          "category": "Fitness",
+          "tags": ["yoga", "fitness", "eco-friendly", "non-slip"],
+          "variants": [
+            {
+              "type": "color",
+              "value": "Green"
+            },
+            {
+              "type": "color",
+              "value": "Purple"
+            }
+          ],
+          "inventory": {
+            "quantity": 75,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Running Shoes",
+          "product_id": 52,
+          "description": "Lightweight running shoes with breathable mesh upper.",
+          "price": 79.99,
+          "category": "Footwear",
+          "tags": ["running", "shoes", "lightweight", "breathable"],
+          "variants": [
+            {
+              "type": "size",
+              "value": "8"
+            },
+            {
+              "type": "size",
+              "value": "9"
+            },
+            {
+              "type": "size",
+              "value": "10"
+            }
+          ],
+          "inventory": {
+            "quantity": 120,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Electric Kettle",
+          "product_id": 53,
+          "description": "Stainless steel electric kettle with auto shut-off feature.",
+          "price": 39.99,
+          "category": "Kitchen",
+          "tags": ["kitchen", "appliance", "electric", "kettle"],
+          "variants": [
+            {
+              "type": "capacity",
+              "value": "1.5L"
+            },
+            {
+              "type": "capacity",
+              "value": "2L"
+            }
+          ],
+          "inventory": {
+            "quantity": 60,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Gaming Keyboard",
+          "product_id": 54,
+          "description": "Mechanical gaming keyboard with RGB backlight.",
+          "price": 89.99,
+          "category": "Electronics",
+          "tags": ["gaming", "keyboard", "mechanical", "RGB"],
+          "variants": [
+            {
+              "type": "switch",
+              "value": "Blue"
+            },
+            {
+              "type": "switch",
+              "value": "Red"
+            }
+          ],
+          "inventory": {
+            "quantity": 40,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Smart Watch",
+          "product_id": 55,
+          "description": "Smart watch with heart rate monitor and GPS.",
+          "price": 129.99,
+          "category": "Wearable",
+          "tags": ["smartwatch", "wearable", "fitness", "GPS"],
+          "variants": [
+            {
+              "type": "strap",
+              "value": "Silicone"
+            },
+            {
+              "type": "strap",
+              "value": "Leather"
+            }
+          ],
+          "inventory": {
+            "quantity": 90,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Noise-Cancelling Headphones",
+          "product_id": 56,
+          "description": "Wireless noise-cancelling headphones with 20-hour battery life.",
+          "price": 199.99,
+          "category": "Audio",
+          "tags": ["audio", "headphones", "wireless", "noise-cancelling"],
+          "variants": [
+            {
+              "type": "color",
+              "value": "Black"
+            },
+            {
+              "type": "color",
+              "value": "Silver"
+            }
+          ],
+          "inventory": {
+            "quantity": 85,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Smartphone",
+          "product_id": 57,
+          "description": "Latest model smartphone with 128GB storage and dual cameras.",
+          "price": 699.99,
+          "category": "Electronics",
+          "tags": ["smartphone", "mobile", "dual camera", "128GB"],
+          "variants": [
+            {
+              "type": "color",
+              "value": "Black"
+            },
+            {
+              "type": "color",
+              "value": "White"
+            }
+          ],
+          "inventory": {
+            "quantity": 50,
+            "inStock": true
+          }
+        },
+        {
+          "name": "Coffee Maker",
+          "product_id": 58,
+          "description": "Programmable coffee maker with 12-cup capacity.",
+          "price": 49.99,
+          "category": "Kitchen",
+          "tags": ["kitchen", "coffee", "appliance", "programmable"],
+          "variants": [
+            {
+              "type": "color",
+              "value": "Black"
+            },
+            {
+              "type": "color",
+              "value": "Stainless Steel"
+            }
+          ],
+          "inventory": {
+            "quantity": 30,
+            "inStock": true
+          }
+        }
+      
+  ]
+  
+
+
+

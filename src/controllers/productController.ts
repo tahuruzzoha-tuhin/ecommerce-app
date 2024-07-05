@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import Product from '../models/Product';
+import Product, { IProduct } from '../models/Product';
 import Counter from '../models/Counter';
-import { validateProduct } from '../utils/validateProduct';
+import { validateProduct, validateProductPartial } from '../utils/validateProduct';
 import mongoose from 'mongoose';
 
 
@@ -106,9 +106,11 @@ export const getProductById = async (req: Request, res: Response) => {
 export const updateProduct = async (req: Request, res: Response) => {
   try {
     const { name, description, price, category, tags, variants, inventory } = req.body;
-    const productData = { name, description, price, category, tags, variants, inventory };
 
-    const validation = validateProduct(productData);
+    const productData: Partial<IProduct> = { name, description, price, category, tags, variants, inventory };
+
+    // Validate product data
+    const validation = validateProductPartial(req.body);
     if (!validation.success) {
       return res.status(400).json({ success: false, error: validation.error });
     }

@@ -21,6 +21,25 @@ const ProductSchema = z.object({
 });
 
 
+export const productPartialSchema = z.object({
+  name: z.string().optional(),
+  description: z.string().optional(),
+  price: z.number().optional(),
+  category: z.string().optional(),
+  tags: z.array(z.string()).optional(),
+  variants: z.array(z.object({
+    type: z.string(),
+    value: z.string()
+  })).optional(),
+  inventory: z.object({
+    quantity: z.number(),
+    inStock: z.boolean()
+  }).optional()
+}).strict();
+
+
+
+
 // ############ PRODUCT VALIDATOR ###############
 export const validateProduct = (productData: any) => {
   const validation = ProductSchema.safeParse(productData);
@@ -35,10 +54,10 @@ export const validateProduct = (productData: any) => {
 
 
 // Partial schema for partial updates
-const partialProductSchema = ProductSchema.partial();
+// const partialProductSchema = ProductSchema.partial();
 
 export const validateProductPartial = (productData: any) => {
-  const validation = partialProductSchema.safeParse(productData);
+  const validation = productPartialSchema.safeParse(productData);
   if (!validation.success) {
     return {
       success: false,
