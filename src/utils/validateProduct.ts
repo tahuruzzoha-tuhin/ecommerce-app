@@ -20,6 +20,8 @@ const ProductSchema = z.object({
   inventory: InventorySchema,
 });
 
+
+// ############ PRODUCT VALIDATOR ###############
 export const validateProduct = (productData: any) => {
   const validation = ProductSchema.safeParse(productData);
   if (!validation.success) {
